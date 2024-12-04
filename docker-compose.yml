@@ -15,3 +15,4 @@ services:
             capabilities: [gpu]
             device_ids:
             - nvidia.com/gpu=all
+    command: --host 127.0.0.1 --port 8001 --model AstraMindAI/xttsv2 --gpt_model AstraMindAI/xtts2-gpt --max_concurrency 8 --vllm_logging_level warn
