@@ -4,7 +4,7 @@ WORKDIR /app
 
 COPY . .
 
-RUN apt update && apt install -y build-essential
+RUN apt update && apt install -y build-essential portaudio19-dev
 
 RUN --mount=type=cache,target=/root/.cache/pip python -m pip install auralis
 
